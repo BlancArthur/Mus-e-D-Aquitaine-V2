@@ -153,3 +153,289 @@ ul {
 #reload {
 	width:100%;
 }
+
+/* nouvelle homepage */
+
+
+container-grid{
+	display: grid;
+	grid-template-columns:repeat(24,40px);
+	grid-gap:10px ;
+}
+
+.unbloque {
+	border-radius: 5px 10px 10px 10px;
+	grid-column: 4/24;
+	margin-top: 650px;
+	color: #FFFFFF;
+	position: relative;
+	background-color: #17171ade;
+	height: auto;
+	width: 1000px;
+}
+.photo {
+	height: 150px;
+	width: 150px;
+	position: relative;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.h1{ 
+	position: absolute;
+	text-align: center;
+	display: inline;
+	margin-left: 000px;
+	font-size: medium;
+	font-family: 'Montserrat', sans-serif;
+}
+.placement-premiere-phrase {
+	margin-top: 45px;
+	position: absolute;
+	display:inline ;
+	text-align: center;
+}
+
+#leboutton{
+	
+	border-radius: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color:#ffffff;
+	background-color: #17171ade;
+	border: rgb(255, 255, 255);
+	margin-left: 150px;	
+}
+
+
+.deuxbloque {
+	border-radius: 5px 10px 10px 10px;
+	grid-column: 4/24;
+	margin-top: 150px;
+	color: #FFFFFF;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: #17171ade;
+	height: auto;
+	width: 1000px;
+	max-height:170px ;
+}
+
+.placement-deuxieme-phrase {
+	margin-top: 45px;
+	position: relative;
+	display:inline ;
+	text-align: left;
+}
+
+.h11{ 
+	top: 0px;
+	margin-top: 0px;
+	position: relative;
+	text-align: center;
+	display: inline;
+	padding-left: 771px;
+	font-size: medium;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.photo2 {
+	
+	height: 150px;
+	width: 170px;
+	position: relative;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#leboutton2{
+	
+	border-radius: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color:#ffffff;
+	background-color: #17171ade;
+	border: rgb(255, 255, 255);
+	
+}
+
+.div{
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+
+.troisbloque {
+	border-radius: 5px 10px 10px 10px;
+	grid-column: 4/24;
+	margin-top: 150px;
+	color: #FFFFFF;
+	position: relative;
+	background-color: #17171ade;
+	height: auto;
+	width: 1000px;
+}
+.photo3 {
+	height: 150px;
+	width: 150px;
+	position: relative;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.h3{ 
+	grid-column: 5/24;
+	position: absolute;
+	text-align: left;
+	display: inline;
+	margin-left: 000px;
+	font-size: medium;
+	font-family: 'Montserrat', sans-serif;
+}
+.placement-troisième-phrase {
+	margin-top: 45px;
+	position: absolute;
+	display:inline ;
+	text-align: center;
+}
+
+#leboutton3{
+	
+	border-radius: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color:#ffffff;
+	background-color: #17171ade;
+	border: rgb(255, 255, 255);
+	margin-left: 150px;	
+}
+
+div button a {
+	background-color:#17171ade;
+	border-radius: 10px;
+	text-decoration: none;	
+	color: white;
+
+}
+
+#pied-pour-la-map {
+	position: absolute;
+	margin-top: 220px;
+	width: 100%;
+	height:700px ;
+	background-color: rgba(0, 0, 0, 0.582);
+}
+
+/* .carte {
+	position: absolute;
+	display: inline-flex;
+	margin-left: 680px;
+	margin-top: 30px;
+	height: 60%;
+}
+
+.text1 {
+	position: absolute;
+	float: left;
+	background-color: white;
+	
+}
+#adresse {
+	font-size: 27px;
+	color:white ;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+#trait_dessus
+{
+border-top: 1px solid white;
+width : 300px;
+margin-left: 150px;
+} 
+
+.itineraire {
+ position: absolute;
+ display: block;
+ margin-left: 40px;
+ font-size: 20px;
+ padding-top: 40px;
+ color: white;
+}
+
+
+.venez {
+	color: white;
+	margin-top: 350px ;
+	font-size: 35px;
+	margin-left: 100px;
+}
+
+.ouvert {
+	color: white;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.contacter {
+	color: white;
+	margin-top: -93px ;
+	font-size: 35px;
+	margin-left: 700px;
+	position: absolute;
+}
+
+.num {
+	color: white;
+	margin-top: -38px;
+	margin-left: 750px;
+} */
+
+footer{
+	padding:50px;
+	box-sizing: border-box;
+}
+
+.ligne1{
+	
+	width: 100%;
+	display: flex;
+	max-height:500px;
+	justify-content: space-between;
+	color: white;
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+.ligne2{
+	color: white;
+	
+	width: 100%;
+	height: 400px;
+	display: flex;
+}
+
+.ligne1 p:first-child{
+margin-bottom: 100px;
+padding-bottom: 15px;
+border-bottom: solid 1px white;
+}
+
+.ligne1 p:last-child{
+margin-top: 15px;
+font-size: 25px;
+}
+
+.ligne2 p:first-child{
+font-size: 40px;
+padding-left: 87px;
+}
+
+#tel {
+	padding-left: 110px;
+}
