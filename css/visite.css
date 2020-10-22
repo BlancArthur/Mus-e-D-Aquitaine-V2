@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap%27');
+
+.CadreVisite {
+	width: 100%;
+	position: absolute;
+	margin-top: 500px;
+}
+.tarifs {
+	padding-top: 10px;
+	border-radius:10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	width:80%;
+	margin: auto;
+	/*background-repeat: repeat-x;*/
+}
+
+#t {
+	margin-top: 100px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+#reduit {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+#gratuit {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	text-align: justify;
+}
+
+#groupes {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+.texte1 {
+	padding-left: 20px;
+}
+
+
+.texte2 {
+	padding-left: 20px;
+}
+
+
+.texte3 {
+	padding-left: 20px;
+}
+
+
+.texte4 {
+	padding-left: 20px;
+}
