@@ -10,7 +10,7 @@
     <body>
         <div class="nav_bar">
 			<img class="logo_musée" src="img/musee.png">
-			<ul>
+			<ul class="liste_nav_bar">
 				<li><a href="index.html">Accueil</a></li>
  				<li><a href="exposition.html">Exposition</a></li>
  				<li><a href="visite.html">Visite</a></li>
@@ -32,10 +32,9 @@
                 <!-- <hr class="hr-splitter"> -->
                 <!-- ------------ BOOKSHOP ------------ -->
                 <h2 class="text-subtitle">
-                    <hr class="hr-vertical">Librairie
-                    <input type="button" name="lib-btn" id="lib-btn" 
+                    <hr class="hr-vertical"><a href="#btq-bs" name="lib-btn" id="lib-btn" 
                     rel="btq-bs" value="&#11167;" 
-                    onclick="buttonToggle(this,'&#11167;','&#11165;')">
+                    onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Librairie</a>
                  </h2>
                 <!-- ------------ CARDS ------------ -->
                 <div id="btq-bs" class="btq-bookshop">
@@ -93,10 +92,10 @@
 
                 <!-- ------------ GIFT IDEA ------------ -->
                 <h2 class="text-subtitle">
-                    <hr class="hr-vertical">Idées cadeaux
-                    <input type="button" name="lib-btn" id="lib-btn" 
-                    rel="btq-gi" value="&#11167;" 
-                    onclick="buttonToggle(this,'&#11167;','&#11165;')">   
+                    <hr class="hr-vertical"><a href="#btq-gi" name="lib-btn" id="lib-btn" 
+                        rel="btq-gi" value="&#11167;" 
+                        onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Idées cadeaux</a>
+
                 </h2>
 
                 <div id="btq-gi" class="btq-giftidea">
@@ -188,17 +187,89 @@
                 
                 <!-- ------------ PHOTO PRINT ------------ -->
                 <h2 class="text-subtitle">
-                    <hr class="hr-vertical">Tirage photographie <span>de Félix Arnaudin</span>
-                    <input type="button" name="lib-btn" id="lib-btn" 
+                    <hr class="hr-vertical"><a href="#btq-pp" name="lib-btn" id="lib-btn" 
                     rel="btq-pp" value="&#11167;" 
-                    onclick="buttonToggle(this,'&#11167;','&#11165;')">  
+                    onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Tirage photographie <span>de Félix Arnaudin</span></a> 
                 </h2>
 
                 <div id="btq-pp" class="btq-photoprint">
-                    <p>TEST Photo print</p>
+                    <div class="btq-pp-container">
+                        <div class="btq-pp-container-img-show">
+                            <img src="img/btq/pp/1.jpg" class="btq-pp-img">
+                        </div>
+                        <div class="btq-pp-container-selector">
+                            <h3 class="btq-pp-selector-title">Tirages Félix Arnaudin</h3>
+                            <div class="selector-container">
+                                <button class="selector-btn" onclick="selectImg(this)" value="1"
+                                rel="img-1"><p>Autoportrait</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="2"
+                                rel="img-2"><p>Pêcheurs à l'Aygue-Longue</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="3"
+                                rel="img-3"><p>Eglise de Luglon</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="4"
+                                rel="img-4"><p>Arjuzanx, motte du moulin</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="5"
+                                rel="img-5"><p>Grands pins de Guentes</p></button>
+
+                                <div class="selector-img" id="img-1">
+                                    <h5>Félix Arnaudin, autoportrait vers 1876</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle</p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-2">
+                                    <h5>Pêcheurs à l'Aygue-Longue, 20 mars 1886, Commensacq</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-3">
+                                    <h5>Eglise de Luglon, de la portène 18.05.1900</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-4">
+                                    <h5>Arjuzanx, motte du moulin et tour 21 novembre 1901</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-5">
+                                    <h5>Grands pins de Guentes, 8 octobre 1890</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+
         </div>
+        <!------------------------------------------------------ FOOTER ------------------------------------------------>
+<footer>
+    
+
+<!----------------- PLAN DU SITE ----------------------->
+    <div class="plan_du_site">
+        <a href="index.html" class="texte_plan_du_site">Accueil</a>
+        <a href="exposition.html" class="texte_plan_du_site">Exposition</a>
+        <a href="visite.html" class="texte_plan_du_site">Visite</a>
+        <a href="boutique.html" class="texte_plan_du_site">Boutique</a>
+    </div>
+<!-------------------- LEMON --------------------------->
+    <div class="lemon">
+        <p>Par Lemon<p>
+    </div>
+</footer>
     </body>
 </html>
