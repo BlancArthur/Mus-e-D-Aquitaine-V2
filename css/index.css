@@ -5,6 +5,7 @@
 
 .CadreBoutonPopUpCovid {
 	width: 100%;
+	z-index: 18;
 	height: 40px;
 	padding-top: 100px;
 }
@@ -95,6 +96,8 @@ flex-direction:column;
 	display: flex;
 	flex-direction: row;
 	align-self: center;
+	overflow: hidden;
+	z-index: 30;
 }
 .bouton_plus {
 	border-radius: 10px; /*arrondi bouton plus*/
@@ -131,6 +134,11 @@ flex-direction:column;
 	height: 150px;
 	width: 150px;
 	border-radius: 10px 10px 0px 0px;
+	transition: 0.2s;
+	font-size:25px ;
+}
+.photo:hover {
+	transform: scale(1.2);		
 }
 #bouton_plus_1{ /*placement bouton_plus 1*/
 	margin-top: 55px;
@@ -148,6 +156,12 @@ flex-direction:column;
 	width: 170px;
 	border-radius: 10px 10px 0px 0px;
 	text-align: right;
+	transition: 0.2s;
+	font-size:25px ;
+}
+.photo2:hover {
+	transform: scale(1.2);
+
 }
 
 #bouton_plus_2{ /*placement bouton_plus 2*/
@@ -165,6 +179,11 @@ flex-direction:column;
 	height: 150px;
 	width: 150px;
 	border-radius: 10px 10px 0px 0px;
+	transition: 0.2s;
+	font-size:25px ;
+}
+.photo3:hover {
+	transform: scale(1.2);		
 }
 #bouton_plus_3{ /*placement bouton_plus 3*/
 	margin-top: 50px;
@@ -304,3 +323,56 @@ div button a { /*couleur bouton "plus"*/
 .social_menu ul li:nth-child(4) a:hover { /*couleur transition youtube*/
     background-color: #cd201f;
 }
+
+
+
+#main{
+	color: white;
+	position:absolute;
+	top:70%;
+	left:30%;
+	z-index: 7;
+  }
+  .box{
+	z-index: 30;
+	width:150px;
+	height: 200px;
+	display:inline-block;
+	overflow:hidden;
+	z-index: 7;
+  }
+  .letter{
+	font-family: cormorant garamond;
+	font-size: 5cm;
+	line-height: 250px;
+	position:relative;
+	left:-160px;
+	transition: all .25s linear;
+	z-index: 7;
+  }
+
+
+  /* #main2{
+	color: white;
+	position:absolute;
+	top:80%;
+	left:30%;
+	z-index: 7;
+  }
+  .box2{
+	z-index: 30;
+	width:150px;
+	height: 200px;
+	display:inline-block;
+	overflow:hidden;
+	z-index: 7;
+  }
+  .letter2{
+	font-family: cormorant garamond;
+	font-size: 5cm;
+	line-height: 250px;
+	position:relative;
+	left:-160px;
+	transition: all .25s linear;
+	z-index: 7;
+  } */
