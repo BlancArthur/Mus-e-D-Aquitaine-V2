@@ -1,16 +1,25 @@
-/*------------------------------------
---------------- POP-UP COVID --------------------------------------------------------*/
+.video_fond {	
+	z-index: -1;
+	position: fixed;
+    width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	opacity: 30%;
+}
+/*--------------------------------------------------- POP-UP COVID --------------------------------------------------------*/
 
 /* Bouton Pop Up Style */
 
 .CadreBoutonPopUpCovid {
 	width: 100%;
-	z-index: 18;
 	height: 40px;
 	padding-top: 100px;
+	z-index: 2;
 }
 /*-------------------- BOUTON POP-UP ------------------------*/
 .btnPopup{
+	z-index: 2;
 	background:#30323d;
   	width:200px;
   	height:40px;
@@ -84,30 +93,37 @@
 .barres_liens {
 display:flex;
 flex-direction:column;
+margin-top: 30px;
 }
 .bloc {
-	border-radius: 5px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
 	margin-top: 100px;
 	color: #FFFFFF; /*couleur texte*/
 	background-color: #17171ade; /*couleur fond*/
 	height: auto;
 	width: 70%;
-	max-height:170px ;
 	display: flex;
 	flex-direction: row;
 	align-self: center;
-	overflow: hidden;
-	z-index: 30;
 }
 .bouton_plus {
 	border-radius: 10px; /*arrondi bouton plus*/
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
 	color:#ffffff;
 	background-color: #17171ade;
 	border: rgb(255, 255, 255);
 	align-self: right;
 	align-self: flex-end;
 	margin-top: 50px;
+	border-radius:50px; /*arrondi du bouton*/
+	border:2px solid white;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+.bouton_plus:hover{
+	color:#17171ade;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 .titres_barres_liens {
 	font-size: medium;
@@ -118,10 +134,19 @@ flex-direction:column;
 .textes_barres_liens {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	margin-right: 10px;
 	margin-left: 10px;
 }
+.textes_barres_liens_bas_droite {
+	display: flex;
+	justify-content: flex-start;
+}
 
+.textes_barres_liens_bas_gauche {
+	display: flex;
+	justify-content: flex-end;
+}
 /*------- EXPOSITION / BLOC 1 --------*/
 
 .placement-premiere-phrase {
@@ -130,18 +155,14 @@ flex-direction:column;
 	display:inline ;
 	text-align: center;
 }
-.photo {
-	height: 150px;
-	width: 150px;
-	border-radius: 10px 10px 0px 0px;
+.photo1 {
+	width: 33%;
+	border-radius: 10px 0px 0px 10px;
 	transition: 0.2s;
-	font-size:25px ;
+    font-size:25px ;
 }
-.photo:hover {
-	transform: scale(1.2);		
-}
-#bouton_plus_1{ /*placement bouton_plus 1*/
-	margin-top: 55px;
+.photo1:hover {
+    transform: scale(1.2);
 }
 /*------- VISITE / BLOC 2 --------*/
 
@@ -152,21 +173,15 @@ flex-direction:column;
 	text-align: left;
 }
 .photo2 {
-	height: 150px;
-	width: 170px;
-	border-radius: 10px 10px 0px 0px;
+	width: 33%;
+	border-radius: 0px 10px 10px 0px;
 	text-align: right;
 	transition: 0.2s;
-	font-size:25px ;
+    font-size:25px ;
 }
 .photo2:hover {
-	transform: scale(1.2);
-
+    transform: scale(1.2);
 }
-
-#bouton_plus_2{ /*placement bouton_plus 2*/
-	align-self: flex-start;
-}	
 /*------- BOUTIQUE / BLOC 3 --------*/
 
 .placement-troisième-phrase {
@@ -176,25 +191,17 @@ flex-direction:column;
 	text-align: center;
 }
 .photo3 {
-	height: 150px;
-	width: 150px;
-	border-radius: 10px 10px 0px 0px;
+	width: 33%;
+	border-radius: 10px 0px 0px 10px;
 	transition: 0.2s;
-	font-size:25px ;
+    font-size:25px ;
 }
 .photo3:hover {
-	transform: scale(1.2);		
+    transform: scale(1.2);
 }
-#bouton_plus_3{ /*placement bouton_plus 3*/
-	margin-top: 50px;
-}
+/*------- BOUTIQUE / BLOC 3 --------*/
 
-div button a { /*couleur bouton "plus"*/
-	background-color:#17171ade;
-	border-radius: 10px;
-	text-decoration: none;	
-	color: white;
-}
+
 /*------------------------------------------------------- CONTACT -------------------------------------------------------*/
 
 /*---------------- DIVISIONS -------------------*/
@@ -271,13 +278,14 @@ div button a { /*couleur bouton "plus"*/
 }
 /*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
 .social_menu {
+	padding-top: 20px;
 	position: relative;
 	width: 100%;
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 200px;
+	padding-bottom: 20px;
 }
 .social_menu ul {
     display: flex;
@@ -323,56 +331,3 @@ div button a { /*couleur bouton "plus"*/
 .social_menu ul li:nth-child(4) a:hover { /*couleur transition youtube*/
     background-color: #cd201f;
 }
-
-
-
-#main{
-	color: white;
-	position:absolute;
-	top:70%;
-	left:30%;
-	z-index: 7;
-  }
-  .box{
-	z-index: 30;
-	width:150px;
-	height: 200px;
-	display:inline-block;
-	overflow:hidden;
-	z-index: 7;
-  }
-  .letter{
-	font-family: cormorant garamond;
-	font-size: 5cm;
-	line-height: 250px;
-	position:relative;
-	left:-160px;
-	transition: all .25s linear;
-	z-index: 7;
-  }
-
-
-  /* #main2{
-	color: white;
-	position:absolute;
-	top:80%;
-	left:30%;
-	z-index: 7;
-  }
-  .box2{
-	z-index: 30;
-	width:150px;
-	height: 200px;
-	display:inline-block;
-	overflow:hidden;
-	z-index: 7;
-  }
-  .letter2{
-	font-family: cormorant garamond;
-	font-size: 5cm;
-	line-height: 250px;
-	position:relative;
-	left:-160px;
-	transition: all .25s linear;
-	z-index: 7;
-  } */
