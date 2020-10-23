@@ -1,4 +1,5 @@
-/*--------------------------------------------------- POP-UP COVID --------------------------------------------------------*/
+/*------------------------------------
+--------------- POP-UP COVID --------------------------------------------------------*/
 
 /* Bouton Pop Up Style */
 
@@ -31,39 +32,48 @@
 /*-------------------- FENETRE POP-UP ------------------------*/
 .fenetre_popup{
 	position: fixed;
-	left: 0px;
-	top:0px;
-	background-color: rgba(0,0 ,0 , 0.5);
+	top: 0; /*positionner la fenêtre sombre de fond en haut*/
+	background-color: rgba(0,0 ,0 , 0.5); /*couleur de fenêtre mi-transparente*/
 	width: 100%;
 	height: 100%;
-	z-index:5;
+	z-index: 5;
 	display:none;
-
+	align-items: center;
+	flex-direction: column;
 }
 .haut_popup{
-	position: absolute;
-	top: 100px;
-	align-content: center;
-	width : 70%;
+	margin-top: 200px;
+	display:flex;
+	justify-content: center;
+	width: 70%;
+	padding-top: 10px; /*élargir la boîte rouge du titre vers le haut*/
+	padding-bottom: 10px; /*élargir la boîte rouge du titre vers le haut*/
 	background-color: #d62839; /*red*/
-	padding: 1em;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-	border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px; /*arrondi des bords*/
 }
 .popup{
-	top: 150px;
-	margin: auto;
-	width : 70%;
-	background-color: rgb(243, 243, 243);
-	padding: 1em;
+	align-content: center;
+	width: 70%;
+	background-color: white;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px; /*arrondi des bords*/
 }
 .btnClose {
+	text-align: center;
 	float: right;
 	font-size:16pt;
 	cursor: pointer;
 	color: rgb(26, 26, 26);
+}
+.titre_popup {
+	font-family: Montserrat;
+	font-size:20pt;
+	color: white;
+}
+.text_popup {
+	font-family: Montserrat;
+	font-size:16pt;
+	color: grey;
 }
 /*----------------------------------------------------- CARTE GOOGLE MAPS -----------------------------------------------*/
 .CadreCarte {

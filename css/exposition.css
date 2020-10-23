@@ -13,7 +13,6 @@
 /*-------------------------------------------------------- IMAGES -------------------------------------------------------*/
 
 .flute{
-
 	height: 400px;
 	width: auto;
 	position: absolute;
@@ -23,13 +22,11 @@
 }
 
 .gallo{
-
 	height: 500px;
 	width: auto;
 	position: absolute;
 	right: -50px;
 	top : 1030px;
-
 }
 
 .franco{
@@ -46,7 +43,6 @@
 	position: absolute;
 	right: -200px;
 	top : 2100px;
-
 }
 
 .montesquieu{
@@ -55,7 +51,6 @@
 	position: absolute;
 	right: -100px;
 	top : 2875px;
-
 }
 
 .plancha{
@@ -64,7 +59,6 @@
 	position: absolute;
 	right: 80px;
 	top : 3425px;
-
 }
 /*------------------------------------------------------ ANIMATION ROSACE ------------------------------------------------*/
 .flottant {
